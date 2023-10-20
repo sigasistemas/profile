@@ -22,10 +22,11 @@ return new class extends Migration
                 $table->ulid('id')->primary();
                 $table->ulid('tenant_id')->nullable();
             }
-            $table->string('name', 255)->nullable()->comment('Nome da imagem');
-            $table->string('icon', 255)->nullable()->comment('Icon ou imagem do contato');
-            $table->enum('status', ['draft', 'published'])->default('published')->comment('Status do contato');
-            $table->text('description')->nullable()->comment('Descrição do contato'); 
+            $table->string('name', 255)->nullable()->comment('Nome da imagem ou arquivo');
+            $table->string('icon', 255)->nullable()->comment('Icon da imagem ou arquivo');
+            $table->string('slug', 255)->nullable()->comment('Slug da imagem ou arquivo');
+            $table->enum('status', ['draft', 'published'])->default('published')->comment('Status');
+            $table->text('description')->nullable()->comment('Descrição'); 
             if (config('tenant.incrementing', false)) {
                 $table->morphs('imageable');
             } else {

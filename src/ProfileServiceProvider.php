@@ -168,6 +168,7 @@ class ProfileServiceProvider extends PackageServiceProvider
             'create_contacts_table',
             'create_documents_table',
             'create_socials_table',
+            'create_images_table',
         ];
     }
 }

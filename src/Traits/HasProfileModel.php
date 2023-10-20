@@ -41,8 +41,8 @@ trait HasProfileModel
         return $this->morphMany(Document::class, 'documentable');
     }
 
-    public function image()
+    public function images()
     {
-        return $this->morphOne(Image::class, 'imageable');
+        return $this->morphMany(Image::class, 'imageable');
     }
 }
