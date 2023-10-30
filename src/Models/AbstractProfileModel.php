@@ -23,6 +23,8 @@ class AbstractProfileModel extends Model
         $this->keyType = config('profile.keyType', 'int');
 
         parent::__construct($attributes);
+
+        
     }
 
     protected $guarded = [
