@@ -51,6 +51,10 @@ return [
                 'label' => 'Longitude',
                 'placeholder' => 'Enter the longitude',
             ],
+            'status' => [
+                'label' => 'Status',
+                'placeholder' => 'Enter the status',
+            ],
         ],
         'contact' => [
             'modelLabel' => 'Contact',
