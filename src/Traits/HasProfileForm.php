@@ -5,8 +5,7 @@
  * User: callcocam@gmail.com, contato@sigasmart.com.br
  * https://www.sigasmart.com.br
  */
-
- namespace Callcocam\Profile\Traits;
+namespace Callcocam\Profile\Traits;
 
 use Filament\Forms;
 
