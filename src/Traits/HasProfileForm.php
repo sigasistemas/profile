@@ -115,7 +115,7 @@ trait HasProfileForm
                 ->columnSpan([
                     'md' => config('profile.resources.address.latitude.columnSpan', 4)
                 ])
-                ->required()
+                ->required(config('profile.resources.address.latitude.required', false))
                 ->maxLength(config('profile.resources.address.latitude.maxLength', 255)),
             Forms\Components\TextInput::make('longitude')
                 ->label(__('profile::profile.forms.address.longitude.label'))
